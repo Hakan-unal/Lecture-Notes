@@ -1,0 +1,221 @@
+/* Grup Seçiciler */
+
+/*
+1-) (*) => tüm etiketler 
+2-) (p) => tüm p etiketleri
+3-) (div p) => div içerisineki tüm p etiketleri
+4-) (div,p) => tüm div ve tüm p etiketleri
+5-) (div > p) => bir üst etiketi div olan tüm p etiketleri
+6-) (p ~ div) => p etiketi ile aynı seviyede olan tüm div etiketleri
+7-) (p + div) => p etiketinden sonra gelen tüm div etiketleri
+
+*{
+    border: solid red 1px;
+}
+
+p{
+    background-color: red;
+}
+
+div p{
+    background-color: pink;
+}
+
+div,p{
+    background-color: blue;
+}
+
+div > p{
+background-color: blueviolet;
+}
+
+p~div{
+    background-color: blueviolet;
+}
+
+p+div {
+    color: pink;
+}
+
+*/
+
+/* Etiket Seçiciler */
+
+/*
+
+p[title]{
+    color:red;                    => title etiketine sahip tüm p etiketleri
+}
+
+p[title="third paragraf"]{
+    background-color: red;  => title'ı third paragraf olan p etiketleri
+}
+
+p[title~="forth"]{
+    color: red;             => title içerisinde forth kelimesi geçmesi yeterli
+}
+
+p[title~="paragraf"] {
+    color: pink;            => title içerisinde paragraf kelimesi geçmesi yeterli
+}
+
+a[href^="https"] {
+   color: red;              => href etiketininin başlangıcı https olmak zorunda
+}
+
+a[href^="http"] {
+   color: red;              => href etiketininin başlangıcı http olmak zorunda
+}
+
+a[href$="com"] {
+    color: pink;            => a etiketi içerisinde yer alan href etiketinin sonu com ile bitenle 
+}
+
+a[href^="http"][target="_blank"] {
+    color: red;             => href etiketi http ile başlamalı ayrıca target etiketi _blank olmalı
+}
+
+input[type="text"] {
+    width: 100px;           => input etiketi içerisindeki type'ı text olan
+    display: block;
+}
+input[type="button"]{
+    background-color: blueviolet;
+    padding: 15px;          => input etiketi içerisindeki type'ı button olan
+    border-radius: 50%;
+}
+
+*/
+
+/* Pseudo Seçiciler */
+
+/* Pseudo Element*/
+
+/*
+
+p::first-line {
+    color: red;    => p etiketi içirisindeki ilk satırlar
+}
+
+p.about::first-line {
+    color: red;    => class'ı about olan p etiketinin ilk satırı
+}
+
+p::first-letter{
+    font-size: 50px; => p etiketi içierisindeki ilk harfler
+}
+
+p::after {
+    background-color: red;
+    display: block;
+    padding: 5px;    => Seçilen yerin hemen sonrası
+    content: "";
+}
+
+p::before {
+    background-color: red;
+    display: block;
+    padding: 5px;    => Seçilen yerin hemen öncesi
+    content: "";
+}
+
+*/
+
+/* Pseudo Class */
+
+/* 
+
+ul li:first-child {
+    color: blue;    => ul içerisindeki ilk li elemanı
+}
+
+ul li:last-child{
+    color: red;     => ul içerisindeki son li elemanı
+}  
+
+ul li:nth-of-type(even) {
+    color: pink;    => ul içerisindeki çift sayıdaki li elemanları 
+}
+
+a:link {
+    color: red      => link özelliğinin aktif jale gelmiş olması gerekiyor 
+}
+
+a:visited {
+    color: green;   => Link daha önce ziyaret edildiyse aktif hale gelir
+}
+
+a:hover {
+    background-color: aqua;
+    color: white;   => Mouse üzerine geldiği zaman aktif hale gelir
+}
+
+a:active {
+    color:blue;
+    background-color: brown;   => Mouse ile click yapıldığı parmak mouse'un üzerinde kaldığı sürece aktif hale gelir
+}
+
+span {
+    display: none;
+    background-color: red;
+    color: white;
+    padding: 5px;
+}                       => yukarıda span için css yazıldı ve aşağıda mouse div üzerine geldiğinde aktifleşecek css yazıldı etkilediği yer span 
+                        // Bunu kullabilmek için elementlerin birbirleri içerisine yer alamsı gerekiyor!!!
+div:hover span{
+    display: block;
+}
+
+*/
+
+/* Kalıtım (Etiketler classlar idler öncelikleri hangisi daha öncelikli) */
+
+/*
+
+body {
+    color: red;
+}
+
+ul {
+    color: blue;
+}
+
+li {
+    color: darkcyan;
+}
+
+a {
+    color: pink;
+}
+
+.orange {
+    color: orange;
+}
+
+#purple {
+    color: purple;
+}
+
+*/
+
+#tablo{
+    width: 100%;
+}
+
+table tr:nth-of-type(even){
+    background-color:gray;
+}
+table tr:nth-of-type(odd){
+    background-color:gainsboro ;
+}
+tr:first-child{
+    color:white;
+    background-color: blue;
+}
+tr th{
+    background-color: blue;
+}
+
+tr:hover td{
+    background-color: cadetblue;
+}
