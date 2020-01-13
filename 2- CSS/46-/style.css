@@ -1,0 +1,49 @@
+/* Divs */
+/*
+
+p{
+    color:red;
+}
+.box1 p{
+    color:blue;
+}
+.box2 p{
+    color:rebeccapurple;
+}
+.box1{
+    color:green;
+    overflow: auto;
+    height: 100px;
+    width:50%;
+}
+.box2{
+    color:green;
+    overflow: scroll;
+    height: 130 px;
+    width:50%;
+}
+
+*/
+
+/* Uygulama */
+/*
+
+#container {
+    width: 75%;
+    background-color: green;
+    border: 1px solid red;
+}
+
+#left {
+    width: 74%;
+    display: inline-block;
+    background-color: plum;
+
+}
+
+#right {
+    width: 24%;
+    display: inline-block;
+    background-color: pink;
+}
+*/
