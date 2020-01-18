@@ -1,4 +1,5 @@
 /* Divs */
+
 /*
 
 p{
@@ -26,6 +27,7 @@ p{
 */
 
 /* Uygulama */
+
 /*
 
 #container {
@@ -46,4 +48,43 @@ p{
     display: inline-block;
     background-color: pink;
 }
+*/
+
+/* Floating Divs and Images */
+
+/*
+
+#float{
+    float:left;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+}
+
+.clear{
+    overflow: auto;
+}
+
+#first {
+    background-color: purple;
+    float: left;
+}
+
+#second {
+    background-color: aqua;
+    float: left;
+}
+
+#third {
+    background-color: red;
+    float:left;
+}
+
+#contain {
+    background-color: gray;
+}
+
 */
