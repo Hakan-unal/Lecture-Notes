@@ -1,0 +1,16 @@
+body{
+    background-color: teal;
+}
+
+img{
+    width: 200px;
+}
+
+.box{
+    display: inline-block;
+    margin-left: 15px;
+    width: 210px;
+    height: 220px;
+    background-color: white;
+
+}

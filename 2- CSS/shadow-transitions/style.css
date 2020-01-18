@@ -1,0 +1,38 @@
+body {
+    background-color: gray;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    display: inline-block;
+    margin: 10px;
+    transition: width 2000ms,height 1500ms;
+}
+
+#first {
+    box-shadow: 5px 5px 5px rgb(73, 179, 73);
+    display: none;
+}
+
+#container:hover #first {
+    display: inline-block;
+}
+
+#second {
+    box-shadow: 5px 5px;
+}
+
+#third {
+    box-shadow: 10px 30px 5px rgba(175, 26, 175, 0.8);
+}
+
+#fourth {
+    box-shadow: 10px 20px 30px;
+}
+
+#fifth:hover {
+    width: 250px;
+    height: 100px;
+}
