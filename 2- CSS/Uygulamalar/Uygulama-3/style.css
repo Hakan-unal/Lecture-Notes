@@ -1,0 +1,23 @@
+#foto {
+    opacity: 0.4;
+    width: 100%;
+    position: absolute;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+}
+
+#metin {
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+    opacity: 1;
+    position:relative;
+    top:450px;
+}
+
+i{
+    font-size: 100px;
+}
