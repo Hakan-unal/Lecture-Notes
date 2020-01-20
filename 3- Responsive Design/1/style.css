@@ -1,0 +1,52 @@
+h1 {
+    color: blue;
+    font-size: 50px;
+}
+
+div {
+    background-color: red;
+    border: 1px solid black;
+    width: 25%;
+    height: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:1200px) {
+    h1 {
+        color: pink;
+        font-size: 30px;
+    }
+    div {
+        width: 33%;
+    }
+   
+}
+
+@media screen and (max-width:900px) {
+    h1 {
+        color: red;
+        font-size: 20px;
+    }
+    div {
+        width: 49%;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    h1 {
+        color: yellow;
+        font-size: 40px;
+    }
+    div {
+        width: 100%;
+    }
+   
+}

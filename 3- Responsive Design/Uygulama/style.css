@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: cadetblue;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    height: 45rem;
+}
+
+header .bg-image {
+    position: absolute;
+    background-image: url(../img/bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 45rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+header h1 {
+    padding: 11rem;
+    padding-bottom: 0;
+}
+
+.button {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    background-color: brown;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    opacity: 0.6;
+    transition: all 0.5s;
+}
+
+.button:hover {
+    background-color: white;
+    color: brown;
+    box-shadow: 3px 3px 3px;
+}
+
+.button:active {
+    background-color: brown;
+    color: white;
+}
+
+#first {
+    background-color: white;
+    color: red;
+}
+
+#second {
+    padding: 2rem;
+}
+
+#second ul {
+    list-style: none;
+}
+
+#second li {
+    background: #fff;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.col-content {
+    padding: 1.5rem;
+}
+
+#one {
+    background-color: blue;
+    padding: 20px;
+}
+
+#two {
+    background-color: gray;
+    padding: 20px;
+}
+
+#three {
+    background-color: black;
+    padding: 20px;
+}
+
+@media screen and (min-width:700px) {
+    #second li {
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+    #one, #two{
+        width: 49%;
+        display: inline-block;
+    }
+}
