@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <hr>
+
+    <div class="mx-auto w-50">
+        <label for="name">Name</label>
+        <input id="name" type="text" class="form-control" placeholder="Enter name">
+    </div>
+
+    <div class="mx-auto w-50">
+        <label for="email">E-mail</label>
+        <input id="email" type="email" class="form-control" placeholder="Enter email">
+        <small class="form-text text-muted text-danger">
+            Please correct
+        </small>
+    </div>
+
+    <div class="mx-auto w-50">
+        <label for="password">Password</label>
+        <input id="password" type="password" class="form-control" placeholder="Enter password">
+        <small class="form-text text-success">
+            Please enter correct password
+        </small>
+    </div>
+
+    <div class="mx-auto w-50">
+        <label for="city">City</label>
+        <select class="form-control" name="city" id="city">
+            <option value="Hatay">Hatay</option>
+            <option value="Adana">Adana</option>
+            <option value="İstanbul">İstanbul</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <legend>Hobies</legend>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox">Koşu
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox">Spor
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox">Futbol
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox">Basketbol
+            </label>
+        </div>
+    </div>
+
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="ch">
+        <label for="ch" class="custom-control-label mr-4">Merhaba</label>
+    </div>
+
+    <div class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" id="c">
+        <label for="c" class="custom-control-label mr-4">Merhaba</label>
+    </div>
+
+    <div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" name="Hakan" id="rd">
+            <label for="rd" class="custom-control-label mr-4">Merhaba</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" name="Hakan" id="rad">
+            <label for="rad" class="custom-control-label mr-4">Merhaba</label>
+        </div>
+    </div>
+
+    <div class="input-group">
+        <input type="text" class="form-control">
+        <div class="input-group-append">
+            <span class="input-group-text" id="ig">@gmail</span>
+        </div>
+    </div>
+
+    <div class="input-group mt-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="ig">https://</span>
+            <input class="form-control" type="text">
+        </div>
+    </div>
+
+
+
+    <div class="clearfix mt-5">
+        <div class="w-50 float-left">
+            <div class="w-100">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" class="form-control" placeholder="Enter email">
+                <small class="form-text text-muted text-danger">
+                    Please correct
+                </small>
+            </div>
+        </div>
+        <div class="w-50 float-left">
+            <div class="w-100 ml-2">
+                <label for="name">Name</label>
+                <input id="name" type="text" class="form-control" placeholder="Enter name">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src=" https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="../bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+        <script src="../bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+</body>
+
+</html>
