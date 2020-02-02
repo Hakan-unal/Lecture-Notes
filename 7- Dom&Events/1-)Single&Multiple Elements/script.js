@@ -1,3 +1,5 @@
+/*
+
 let val;
 
 val = window.document;
@@ -62,9 +64,11 @@ val[0].style.color = "red";
 
 val = document.querySelectorAll(".p");
 
-val.forEach((element) => {
+val.forEach((element) => {     // query ile foreach methodu geliyor getelementsbyıd'de bu özellik yok
     console.log("");
     console.log(element);
     console.log("");
 });
 console.log(val);
+
+*/
