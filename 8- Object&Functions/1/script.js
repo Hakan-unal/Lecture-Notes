@@ -79,3 +79,35 @@ object1 = new Person1("hakan", "ünal", 3214);
 
 console.log(object, object1);
 */
+
+
+// ***  Object.create  (Objeden objeye kalıtım)
+
+const Person = {
+    fonksiyon: function () {
+        return 2 + 2;
+    }
+};
+
+let object;
+object = Object.create(Person);
+console.log(object);
+object.name = "Hakan";
+object.surname = "Ünal";
+object.tc = "1234321";
+console.log(object);
+
+
+
+const Person1 = {
+    fonksiyon: function () {
+        return 2 + this.tc;
+    }
+};
+
+let object1 = Object.create(Person1, {
+    name: { value: "Hakan" },
+    surname: { value: "Ünal" },
+    tc: { value: 12 }
+});
+console.log(object1);
