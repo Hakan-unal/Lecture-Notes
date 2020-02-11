@@ -1,0 +1,8 @@
+{
+    "bilgiler": [
+        {"id": 1,"name": "Hakan1","surname": "Ünal1"},
+        {"id": 2,"name": "Hakan2","surname": "Ünal2"},
+        {"id": 3,"name": "Hakan3","surname": "Ünal3"},
+        {"id": 4,"name": "Hakan4","surname": "Ünal4"}
+    ]
+}
