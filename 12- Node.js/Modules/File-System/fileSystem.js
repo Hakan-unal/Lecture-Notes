@@ -1,13 +1,13 @@
 const fs = require("fs");
-
 let value;
 
-
 /*
+// dosyanın bulunduğu dizinin bir üstüne çıkar ve orada bulunan directory isimlerini array içerisinde tutar
 value = fs.readdir("../", (error, data) => {
     if (error) {
         console.log(error);
     } else {
+        console.log(data);
         data.forEach((item) => {
             console.log(item);
         });

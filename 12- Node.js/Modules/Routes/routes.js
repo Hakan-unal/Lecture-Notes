@@ -39,7 +39,7 @@ const routeHandler = (req, res) => {
             const message = bodyParsed.split('=')[1];
 
             console.log(qs.parse(bodyParsed));
-
+            console.log(message);
             fs.appendFileSync('message.txt', message);
         });
 
