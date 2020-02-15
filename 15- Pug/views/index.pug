@@ -28,20 +28,20 @@ block content
     
 
         .row
-            each obj in object
+            each product in object
                 .col-md-4
 
                     .card.my-3
-                        img(src=`/img/${obj.image}` alt=`${obj.description}`).card-img-top
+                        img(src=`/img/${product.image}` alt=`${product.description}`).card-img-top
                         .card-body
                             h4.card-title
-                                a(href="#") #{obj.name}
+                                a(href="#") #{product.name}
                             
-                            p.card-text.pt-2 #{obj.description}  
+                            p.card-text.pt-2 #{product.description}  
                         
                         .card-footer
                             small.text-muted
-                                i.fas.fa-lira-sign #{obj.price}
+                                i.fas.fa-lira-sign #{product.price}
 
                             a(href="#").btn.btn-secondary.btn-sm.float-right
                                 i.fa.fa-angle-double-right Details 

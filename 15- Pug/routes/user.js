@@ -18,12 +18,10 @@ router.get("/", (req, res, next) => {
     // dosya tam path'i ile birlikte parametre olarak fonksiyona gönderilir çağırılır
     /* res.sendFile(path.join(__dirname, "../", "views", "index.html")); */
 
-    
-
     // pug engine kullandığımız için aşağıdaki gibi bir methoda sahibiz. Engine
     // kendisine tanımlanan dizin içerisinde index isimli pug dosyasını arar ve
     // bulunca render edip aynı html dosyası gibi kullanıcının karşısına çıkartır
-    res.render("index", { title:"Homepage", object: admin.object });
+    res.render("index", { title: "Homepage", object: admin.products });
 });
 
 // Modül dışarıdan import edilebilsin diye gerekli tanımlama yapıldı
