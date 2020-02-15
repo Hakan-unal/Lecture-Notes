@@ -1,0 +1,70 @@
+extends layouts/main-layout.pug
+
+block content
+
+    div#mySlider.carousel.slide(data-ride="carousel")
+        ol.carousel-indicators
+            li(data-target="mySlide" data-slide-to="0").active
+            li(data-target="mySlide" data-slide-to="1")
+            li(data-target="mySlide" data-slide-to="2")
+        div.carousel-inner
+            div.carousel-item.active
+                img(src="/img/slider1.png" alt="").d-block.img-fluid
+            div.carousel-item
+                img(src="/img/slider2.png" alt="").d-block.img-fluid
+            div.carousel-item
+                img(src="/img/slider3.png" alt="").d-block.img-fluid
+        a(href="#mySlider" data-slide="prev").carousel-control-prev
+            span.carousel-control-prev-icon
+        a(href="#mySlider" data-slide="next").carousel-control-next
+            span.carousel-control-next-icon
+
+    div.row
+        div.col-md-4
+            div.card.my-3
+                img(src="/img/1.jpg" alt="").card-img-top
+                div.card-body
+                    h4.card-title
+                        a(href="#") Product Name
+                    p.card-text.pt-2 Lorem ipsum dolor sit.
+                div.card-footer
+                    small.text-muted
+                        i.fas.fa-lira-sign 
+                    a(href="#").btn.btn-secondary.btn-sm.float-right
+                        i.fa.fa-angle-double-right Details
+        div.col-md-4
+            div.card.my-3
+                img(src="/img/2.jpg" alt="").card-img-top
+                div.card-body
+                    h4.card-title
+                        a(href="#") Product Name
+                    p.card-text.pt-2 Lorem ipsum dolor sit.
+                div.card-footer
+                    small.text-muted
+                        i.fas.fa-lira-sign
+                    a(href="#").btn.btn-secondary.btn-sm.float-right
+                        i.fa.fa-angle-double-right Details    
+        div.col-md-4
+            div.card.my-3
+                img(src="/img/3.jpg" alt="").card-img-top
+                div.card-body
+                    h4.card-title
+                        a(href="#") Product Name
+                    p.card-text.pt-2 Lorem ipsum dolor sit.
+                div.card-footer
+                    small.text-muted
+                        i.fas.fa-lira-sign 
+                    a(href="#").btn.btn-secondary.btn-sm.float-right
+                        i.fa.fa-angle-double-right Details
+        div.col-md-4
+            div.card.my-3
+                img(src="/img/4.jpg" alt="").card-img-top
+                div.card-body
+                    h4.card-title
+                        a(href="#") Product Name
+                    p.card-text.pt-2 Lorem ipsum dolor sit.
+                div.card-footer
+                    small.text-muted
+                        i.fa.fa-try
+                    a(href="#").btn.btn-secondary.btn-sm.float-right
+                        i.fa.fa-angle-double-right Details
