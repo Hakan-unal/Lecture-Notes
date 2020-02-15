@@ -49,10 +49,11 @@ app.use((req, res) => {
     // kullanılabilmesi için dosyanın root dizininden başlayarak tam path'i lazım
     /* res.sendFile(path.join(__dirname, "views", "404.html")); */
 
+    const object = [{ title: "404" }];
     // pug engine kullandığımız için aşağıdaki gibi bir methoda sahibiz. Engine
     // kendisine tanımlanan dizin içerisinde 404 isimli pug dosyasını arar ve
     // bulunca render edip aynı html dosyası gibi kullanıcının karşısına çıkartır
-    res.render("404",{title:"404"});
+    res.render("404", { title: object });
 });
 
 

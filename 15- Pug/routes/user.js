@@ -1,6 +1,7 @@
 // Gerekli modüller import edildi
 const express = require("express");
 const path = require("path");
+const admin = require("./admin");
 
 const router = express.Router();
 
@@ -17,10 +18,12 @@ router.get("/", (req, res, next) => {
     // dosya tam path'i ile birlikte parametre olarak fonksiyona gönderilir çağırılır
     /* res.sendFile(path.join(__dirname, "../", "views", "index.html")); */
 
+    
+
     // pug engine kullandığımız için aşağıdaki gibi bir methoda sahibiz. Engine
     // kendisine tanımlanan dizin içerisinde index isimli pug dosyasını arar ve
     // bulunca render edip aynı html dosyası gibi kullanıcının karşısına çıkartır
-    res.render("index",{title:"Homepage"});
+    res.render("index", { title:"Homepage", object: admin.object });
 });
 
 // Modül dışarıdan import edilebilsin diye gerekli tanımlama yapıldı
