@@ -6,7 +6,7 @@ const products = [
 module.exports = class Product {
 
     constructor(name, price, imageUrl, description) {
-        this.id = Math.floor(Math.random() * 99999) + 1;
+        this.id = (Math.floor(Math.random() * 99999) + 1).toString();
         this.name = name;
         this.price = price;
         this.imageUrl = imageUrl;
@@ -26,6 +26,18 @@ module.exports = class Product {
         return product;
     }
 
+    static update(prd) {
+        const index = products.findIndex(i => i.id === prd.id);
+        products[index].name = prd.name;
+        products[index].price = prd.price;
+        products[index].imageUrl = prd.imageUrl;
+        products[index].description = prd.description;
+    }
+
+    static deleteById(id) {
+        const index = products.findIndex(i => i.id === id);
+        products.splice(index, 1);
+    }
 }
 
 // const products = Product.getAll();
