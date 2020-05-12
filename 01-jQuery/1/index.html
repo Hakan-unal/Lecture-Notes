@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .deneme {
+            background-color: yellowgreen;
+        }
+
+        #div {
+            position: absolute;
+            top: 50px;
+            left: 200px;
+            width: 200px;
+            height: 200px;
+            background-color: teal;
+            margin-top: 30px;
+        }
+
+
+        .control {
+            margin-top: 50px;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+    <h2>Hello World</h2>
+    <ul>
+        <li>JS</li>
+        <li id="li">NODE
+            <p>ul altında paragraf</p>
+        </li>
+        <li class="li">JQUERY</li>
+        <li>YAZILIM</li>
+    </ul>
+
+    <ol>
+        <li>JS</li>
+        <li id="li">NODE</li>
+        <li class="li">JQUERY</li>
+        <li>
+            <p>ol altında paragraf</p>
+        </li>
+        <li><span id="span">ben bir spanım</span></li>
+    </ol>
+
+    <input class="control" type="text" placeholder="Doldur beni" value="selam bebek">
+
+    <button id="button" type="button" onclick="btnClick();">Button</button>
+
+    <p></p>
+
+    <button id="show" type="button">Show</button>
+    <button id="hide" type="button">Hide</button>
+    <button id="toggle" type="button">Toggle</button>
+
+    <p></p>
+
+    <button id="slidedown" type="button">Slide Down</button>
+    <button id="slideup" type="button">Slide Up</button>
+    <button id="slidetoggle" type="button">Slide Toggle</button>
+
+    <p></p>
+
+    <button id="fadein" type="button">Fade In</button>
+    <button id="fadeout" type="button">Fade Out</button>
+    <button id="fadetoggle" type="button">Fade Toggle</button>
+    <button id="fadeto" type="button">Fade To</button>
+
+
+    <div id="div">
+
+
+    </div>
+
+
+    Hobiler. <select class="control">
+        <option value="Futbol" selected>Futbol</option>
+        <option value="Basketbol">Basketbol</option>
+        <option value="Voleybol">Voleybol</option>
+
+    </select>
+
+    <p></p>
+
+    <button id="animate">Animate</button>
+
+
+
+
+
+
+    <script src="../scripts/jquery-3.5.1.min"></script>
+
+    <script>
+
+
+
+        /* giriş-seçiciler-style ekleme
+
+                console.log($("ul"))
+                console.log($("#li"))
+                console.log($(".li"))
+                console.log($("li")[1])
+                console.log($("ul li p"))
+
+                let styles = {
+                    border: "1px solid black",
+                    color: "pink"
+                }
+
+                $("h2").css("color", "red")
+                $("#span").css(styles)
+        */
+
+
+
+        /* bazı methodlar
+
+        console.log($("ol li span").text())
+        $("ol li span").text("Metin değiştirildi")
+        console.log($("input").val())
+
+        let style={
+            width:"100",
+            height:"100",
+            border:"1px solid red"
+        }
+
+        const btnClick = () => {
+            $("button").css("color", "red")
+            $("input").val("")
+            $("input").addClass("deneme")
+            $("ol li p").toggleClass("deneme")
+            $("div").css(style)
+        }
+
+        */
+
+
+
+        /* click eventi
+
+        $(document).ready(() => {
+            $("li").click(function () {
+                console.log("li clicklendi")
+                $(this).toggleClass("deneme")
+            })
+        })
+
+
+        const btnClick = () => {
+            $("button").toggleClass("deneme")
+
+        }
+        */
+
+
+
+        /* jQuery Events daha fazlası dokümantasyon kısmında
+
+        $(document).ready(() => {
+
+            $(".control").change(function() {
+                let val = $("select").val()
+                $("input").val(val);
+                console.log($(this).val())
+            })
+        })
+    */
+
+
+
+        /* Show Hide Toggle
+
+            $(document).ready(() => {
+
+                $("#hide").click(() => {
+                    $("#div").hide(1000, () => {
+                        alert(("Kapandı"))
+                    });
+                })
+
+                $("#show").click(() => {
+                    $("#div").show(1000, () => {
+                        alert(("Açıldı"))
+                    });
+                })
+
+                $("#toggle").click(() => {
+                    $("#div").toggle(3000);
+                })
+            })
+        */
+
+
+
+        /* slide fade
+
+        $(document).ready(() => {
+            $("#slideup").click(() => {
+                $("#div").slideUp("slow");
+            })
+
+            $("#slidedown").click(() => {
+                $("#div").slideDown("slow");
+            })
+
+            $("#slidetoggle").click(() => {
+                $("#div").slideToggle("slow");
+            })
+
+            $("#fadein").click(() => {
+                $("#div").fadeIn("slow");
+            })
+
+            $("#fadeout").click(() => {
+                $("#div").fadeOut("slow");
+            })
+
+            $("#fadetoggle").click(() => {
+                $("#div").fadeToggle("slow");
+            })
+
+            $("#fadeto").click(() => {
+                $("#div").fadeTo("slow",0.6);
+            })
+        })
+*/
+
+
+
+        $(document).ready(() => {
+            $("#animate").click(() => {
+
+
+                $("#div").animate({
+                    left: "100px",
+                    width:"50px",
+                    height:"65px"
+                },1500,()=>{
+                    console.log("Animasyon çalıştı")
+                })
+            })
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
